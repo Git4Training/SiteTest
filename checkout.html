@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Checkout — MoreFur</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg: #ECE6DA;
+    --bg-alt: #DDD3BF;
+    --ink: #1F1B14;
+    --ink-soft: #3A3326;
+    --moss: #4A5A3A;
+    --moss-deep: #2E3826;
+    --clay: #A0512E;
+    --clay-deep: #6B3418;
+    --cream: #F4EFE3;
+    --line: rgba(31, 27, 20, 0.18);
+
+    --serif: 'Instrument Serif', Georgia, serif;
+    --serif-body: 'Newsreader', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+    --mono: 'Space Grotesk', monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+  input, select { font: inherit; color: inherit; }
+  img { display: block; max-width: 100%; }
+  .mono { font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; font-weight: 500; }
+  .serif { font-family: var(--serif); }
+  .serif-italic { font-family: var(--serif); font-style: italic; }
+  ::selection { background: var(--moss); color: var(--cream); }
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--ink-soft); }
+
+  #app { min-height: 100vh; }
+  .boot { position: fixed; inset: 0; background: var(--bg); display: grid; place-items: center; font-family: var(--serif); font-style: italic; font-size: 24px; z-index: 100; }
+</style>
+</head>
+<body>
+
+<div id="app">
+  <div class="boot">checking out…</div>
+</div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="src/icons.jsx"></script>
+<script type="text/babel" src="src/checkout.jsx"></script>
+
+</body>
+</html>
